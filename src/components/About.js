@@ -19,7 +19,7 @@ const About = () => {
       </div>
 
       <div className="success">
-        <h2>Our Success</h2>
+        {/* <h2>Our Success</h2> */}
         <ul className="achievements">
           <li>
             <p>
