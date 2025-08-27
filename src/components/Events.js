@@ -1,42 +1,35 @@
 import React from 'react';
 import consumerBehaviour from '../assets/images/consumer-behaviour.jpg';
 import quantAnalysis from '../assets/images/quant-analysis.png';
+import EventCard from './EventCard';
 
 const Events = () => {
   return (
-    <section id="events" className="events">
-      <h2>Events</h2>
-      <div className="event-card">
-        <img src={consumerBehaviour} width={200}  alt="Qualitative analysis" className="event-img" />
-        <h3>Qualitative analysis</h3>
-        <div className="venue">
-          <p>📆 Friday, June 20 </p>
-          <p>⏱️: 3:30pm–4:30pm</p>
-          <p>📍Room B152 </p>
-        </div>
-        <p className="event-desc">
-          Explore non-numerical data to understand the context, nuances, and underlying <br />
-          factors influencing a business situation. <br />
-          Learn to explore ideas, opinions, and <br /> behaviors to develop effective solutions.
-        </p>
-        <button className="register-button">Register</button>
-      </div>
+    
+    <div>
+      <h2 className='section-title'>Events</h2>
+      <div className="events">
+        <EventCard 
+          eventImg={consumerBehaviour} 
+          eventTitle="Qualitative Analysis"
+          date="Friday, June 20"
+          time="3:30pm - 4:30pm"
+          location="Room B152" 
+          eventDesc="Explore non-numerical data to understand the context, nuances, and factors influencing a business situation. Learn to explore ideas, opinions, and
+          behaviors to develop effective solutions." />
 
-      <div className="event-card">
-        <img src={quantAnalysis}  alt="Quantitative analysis" className="event-img"  />
-        <h3>Quantitative analysis</h3>
-        <div className="venue">
-          <p>📅 Monday, June 9 </p>
-          <p>🕠 5:30 PM – 6:30 PM</p>
-          <p>📍 Room B152 </p>
-        </div>
-        <p className="event-desc">
-          Master the quantitative skills to analyze business cases, build winning financial models, and impress judges with 
-          data-driven recommendations in <br />  this workshop using real competition examples.
-        </p>
-        <button className="register-button">Register</button>
-      </div>
-    </section>
+        <EventCard
+          eventImg={quantAnalysis}
+          eventTitle="Quantitative Analysis"
+          date="Monday, June 9"
+          time="5:30pm - 6:30pm"
+          location="Room B152"
+          eventDesc=" Master the quantitative skills to analyze business cases, build winning financial models, and impress judges with 
+          data-driven recommendations in this workshop using real competition examples"
+        />
+        
+    </div>
+    </div>
   );
 };
 
