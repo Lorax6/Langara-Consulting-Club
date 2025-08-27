@@ -32,6 +32,7 @@ header {
     cursor:pointer;
     margin-right: auto;
     margin-left: 20px;
+    transform: scale(1.2);
 
 }
 
@@ -260,12 +261,12 @@ header {
 .success {
    background-color: #becff8;
    /* padding: 0.3rem; */
-   margin-top: 70px;
+   margin-top: 80px;
    font-family: 'Prompt',sans-serif;
     h2 {
         font-size: 35px;
-        padding-left: 105px;
-        padding-top: 30px;
+        text-align: center;
+        padding-top: 10px;
         color: #1f2b4b;
     }
 
@@ -276,7 +277,7 @@ header {
         align-items:stretch;
         padding-left: 90px;
         padding-right: 200px;
-        padding-top: 15px;
+        padding-top: 30px;
         padding-bottom: 30px;
         margin-bottom: 30px;
    }
@@ -288,6 +289,7 @@ header {
         line-height: 1.5;
         display: inline-block;
         vertical-align: middle;
+        text-align: center;
    }
 
    .CPA, .LAC {
@@ -298,55 +300,177 @@ header {
 
 }
 
+.section-title{
+    font-family: 'Prompt',sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.offer {
+    width: 75%;
+    height: 100px;
+    margin: auto;
+    /* min-height: 50vh; */
+    margin-top: 40px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+
+}
+
+.offer-box {
+    /* flex: 0 0 16rem; /* Fixed width for the boxes 
+    text-align: center;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.5rem;
+    border: #d85300;
+    padding: 1rem;
+    background-color: #ffc19b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ */
+    background: white;
+    border-radius: 25px;
+    border: 1.5px solid #1e2a49;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 150px; /* Set a minimum height */
+    height: 70%; /* Fill available space */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin:10px;
+}
+
+.offer-box:hover{
+    transform: scale(1.1); /* Grow the box slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.offer-icon {
+    transform: scale(2);
+    margin: 10px;
+
+}
+
+.offer-box h3{
+    font-family: 'Prompt',sans-serif;
+    color: #e63b08;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.offer-box p {
+  font-family: 'Prompt',sans-serif;
+  font-size: 16px;
+  /* font-weight: 500; */
+  line-height: 1.6;
+  flex-grow: 1; /* Push content to fill available space */
+  margin: 0; /* Remove default margins */
+  color: #1f2b4b;
+
+}
 
 .events {
+   width: 75%;
+    margin: auto;
+    margin-top: 50px; /* Reduced from 100px */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the cards */
+    align-items: stretch; /* Make cards equal height */
+    gap: 1.5rem; /* Reduced from 2rem for closer spacing */
+    flex-wrap: wrap; /* Allow wrapping if needed */
 
-    font-family: 'Prompt',sans-serif;
-    h2 {
-        font-size: 35px;
-        padding-left: 130px;
-        margin-top: 80px;
-    }
 
-    h3 {
-        font-size: medium;
-        text-align: left;
-        font-weight: 500;
-        margin-top: 10px;
-        margin-left: 80px;
-    }
+}
+
+.event-box{
+    /* width: 70%;
+    background: white;
+    border-radius: 25px;
+    border: 1.5px solid #1e2a49;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 150px; /* Set a minimum height 
+    height: 70%; /* Fill available space 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; */
+
+    flex: 1; /* Allow boxes to grow */
+    min-width: 300px; /* Minimum width before wrapping */
+    max-width: 400px; /* Maximum width */
+    background: white;
+    border-radius: 25px;
+    border: 1.5px solid #1e2a49;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Space between rows if wrapped */
     
-    .venue {
-        font-size: 12px;
-        margin: 5px;
-    }
-
-    .event-desc {
-        font-size: 14px;
-        /* margin: 10px 0; */
-        /* padding: 0 20px; */
-    }
 }
 
-.event-card {
-    width: 400px;
-    height: 500px;
-    border: 3px solid #FFB281;
-    border-radius: 50px;
-    padding-left: 40px;
-    /* margin-left: 100px;
-    margin-top: 50px; */
-    margin: 50px 90px;
-    display:inline-block;
-    vertical-align: top;
-}
 
-.event-img {
+/* .events {
+    width: 70%;
+    height: 100px;
+    /* margin: auto; */
+    /* min-height: 50vh; 
+    margin-left: 10px;
     margin-top: 20px;
-    width:300px;
-    height: 130px;
-    padding-left: 20px;
+    display: flex;
+    flex-direction:row;
+    align-items:start;
+    text-align: center;
+    gap: 0rem;
 }
+
+
+.event-box{
+    width: 70%;
+    background: white;
+    border-radius: 25px;
+    border: 1.5px solid #1e2a49;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display:block;
+    flex-direction: row;
+    align-items: center;
+    min-height: 70px; /* Set a minimum height */
+    /* height: 100%; Fill available space 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin:0px;
+} */
+.event-img{
+    margin-bottom: 10px;
+} 
+
+.event-box h3 {
+    font-family: 'Prompt',sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+   
+} 
+
+.event-box p{
+    text-align: center;
+  font-family: 'Prompt',sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  flex-grow: 1; /* Push content to fill available space 
+  margin: 0; /* Remove default margins */
+  color:#1f2b4b;
+
+} 
 
 .register-button {
     background-color: #1e2a49;
@@ -362,7 +486,7 @@ header {
     margin-top: 50px; */
     /* display: block;        /* Ensure consistent behavior 
     margin: 15px auto;    Center horizontally + add top margin */
-    margin-top: 60px;
+    margin-top: 50px;
     margin-left: 10px;
     cursor: pointer;
 }
