@@ -306,21 +306,22 @@ header {
     font-weight: 700;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .offer {
     width: 75%;
-    height: 100px;
+    height: 200px;
+    margin-top: 40px;
     margin: auto;
     /* min-height: 50vh; */
-    margin-top: 40px;
     display: flex;
+    justify-content: center;
     flex-direction:row;
     align-items: center;
     text-align: center;
-    gap: 2rem;
-
+    gap: 1.5rem;
+    margin-bottom: 40px;
 }
 
 .offer-box {
@@ -376,18 +377,82 @@ header {
 
 }
 
+
+
+/* Events */
+
+.wrapper {
+  padding: 8px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+
+.tab-item {
+  display: inline-flex;
+  font-family: 'Prompt',sans-serif;
+  font-size: 18px;
+  font-weight:500;
+  text-align: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background: #ebe4ee;
+  user-select: none;
+}
+
+.tab-item.active {
+  border-color: #000;
+  background:#1e2a49;
+  color:#e63b08;
+}
+
+.content {
+  padding: 10px 10px;
+  height: 430px;
+  /* overflow: auto; */
+  background-color: #fff;
+}
+
 .events {
+    width: 75%;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px; /* Reduced from 100px */
+    margin-bottom: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center; /* Center the cards */
+    align-items: stretch; /* Make cards equal height */
+    gap: 1.6rem; /* Reduced from 2rem for closer spacing */
+    /* flex-wrap: wrap; Allow wrapping if needed */
+    user-select: none;
+    .register-button{
+        background-color: #1f2b4b;
+    }
+}
+
+
+.summer-events{
+    
    width: 75%;
     margin: auto;
-    margin-top: 50px; /* Reduced from 100px */
-    display: flex;
+    margin-top: 20px; /* Reduced from 100px */
+    display:flex;
     flex-direction: row;
     justify-content: center; /* Center the cards */
     align-items: stretch; /* Make cards equal height */
     gap: 1.5rem; /* Reduced from 2rem for closer spacing */
     flex-wrap: wrap; /* Allow wrapping if needed */
 
-
+    .register-button{
+        background-color: #b2bad0;
+        cursor:not-allowed;
+    }
 }
 
 .event-box{
@@ -405,7 +470,7 @@ header {
 
     flex: 1; /* Allow boxes to grow */
     min-width: 300px; /* Minimum width before wrapping */
-    max-width: 400px; /* Maximum width */
+    max-width: 370px; /* Maximum width */
     background: white;
     border-radius: 25px;
     border: 1.5px solid #1e2a49;
@@ -415,56 +480,25 @@ header {
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 20px; /* Space between rows if wrapped */
-    
+    margin-bottom: 100px; /* Space between rows if wrapped */
 }
 
-
-/* .events {
-    width: 70%;
-    height: 100px;
-    /* margin: auto; */
-    /* min-height: 50vh; 
-    margin-left: 10px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction:row;
-    align-items:start;
-    text-align: center;
-    gap: 0rem;
-}
-
-
-.event-box{
-    width: 70%;
-    background: white;
-    border-radius: 25px;
-    border: 1.5px solid #1e2a49;
-    padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display:block;
-    flex-direction: row;
-    align-items: center;
-    min-height: 70px; /* Set a minimum height */
-    /* height: 100%; Fill available space 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin:0px;
-} */
 .event-img{
     margin-bottom: 10px;
 } 
 
 .event-box h3 {
     font-family: 'Prompt',sans-serif;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 10px;
-   
 } 
 
 .event-box p{
-    text-align: center;
+  text-align: center;
   font-family: 'Prompt',sans-serif;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.6;
   flex-grow: 1; /* Push content to fill available space 
   margin: 0; /* Remove default margins */
@@ -473,20 +507,146 @@ header {
 } 
 
 .register-button {
-    background-color: #1e2a49;
-    border: 1px solid #1e2a49;
-    font-size: 18px;
+    background-color: #b2bad0;
+    border: 1px solid;
+    font-size: 13px;
     color: white;
     /* padding: 10px; */
     border-radius: 50px;
-    width: 300px;
-    padding: 0.5rem;
+    width: 190px;
+    padding: 0.3rem;
     font-family: 'Prompt',sans-serif;
     /* margin-left: 20px;
     margin-top: 50px; */
     /* display: block;        /* Ensure consistent behavior 
     margin: 15px auto;    Center horizontally + add top margin */
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 10px;
     cursor: pointer;
+}
+
+
+/* Meet The Team */ 
+
+.team{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: stretch;
+}
+
+
+.team-item{
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: #f4f5f6;
+	text-align:center;
+	margin:20px 0;
+    margin-left: 40px;
+	padding:50px 20px 40px 20px;
+	border-radius: 8px 8px;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+
+
+.team-img{
+    max-width: 140px;
+    padding: 4px 4px;
+    background-color: #ff8f6d;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* .team-item:hover{
+	background: #1f2b4b;
+} */
+
+.team-item h3{
+	margin:20px 0 1px 0!important;
+	color:#454545;
+    font-family: 'Prompt',sans-serif;
+	font-size:18px;
+	font-weight: 600;
+	text-transform:uppercase;
+	transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+}
+
+.team-info {
+	display: block;
+	margin-bottom:0;
+}
+
+.team-info p{
+	color:#acacac;
+	font-style:italic;
+    margin-bottom: 10px;
+}
+
+/* Contact Us */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+}
+
+.contact-form{
+    max-width: 600px;
+    max-height: 500px;
+    width: 100%;
+    background: white;
+    padding: 25px 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(172, 11, 11, 0.1);
+    border: #e63b08;
+    color: #333;
+    margin: 10px;
+}
+
+form .input-box{
+    margin-top: 10px;
+    font-family: 'Prompt',sans-serif;
+}
+
+.input-box .field{
+    width: 100%;
+    font-family: 'Prompt',sans-serif;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ddd;
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    margin-top:8px ;
+}
+
+.input-box .field.msg{
+    height: 150px;
+    resize: none;
+}
+
+.contact-sub{
+    width: 100%;
+    height: 55px;
+    background: #1f2b4b;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-family: 'Prompt',sans-serif;
+    font-size: 16px;
+    color: #fb9658;
+    font-weight: 500;
+    margin-top: 25px;
 }
