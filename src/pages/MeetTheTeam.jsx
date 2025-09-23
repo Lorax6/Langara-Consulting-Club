@@ -9,19 +9,20 @@ import olivia from '../assets/images/team/olivia.jpg'
 
 const MeetTheTeam = () => {
   return (
-    <div>
-         <h2 className="section-title">Meet The Team</h2>
-        <div className="team">
-            <Team name="Mateus Mota" photo={mateus} title="President and Co Founder" linkedIn="https://www.linkedin.com/in/mateus-boson-mota/"/>
-             <Team name="Peter Kim" photo={peter} title="Co Founder" linkedIn="https://www.linkedin.com/in/mateus-boson-mota/"/>
-            <Team name="Anastasia Wendy" photo={wendy} title="Vice President" linkedIn="https://www.linkedin.com/in/anastasia-wendy-surya/"/>
-            <Team name="Jamie Chan" photo={jamie} title="Director of Communications" linkedIn="https://www.linkedin.com/in/jamiechan20020421/"/>
-            <Team name="Olivia Chen" photo={olivia} title="HR Director" linkedIn="https://www.linkedin.com/in/olivia-chen1/"/>
-
+    <section id='team'>
+        <div>
+            <h2 className="section-title">Meet The Team</h2>
+            <div className="team">
+                <Team name="Mateus Mota" photo={mateus} title="President and Co Founder" linkedIn="https://www.linkedin.com/in/mateus-boson-mota/"/>
+                <Team name="Peter Kim" photo={peter} title="Co Founder" linkedIn="https://www.linkedin.com/in/peter-kim-13592b197/"/>
+                <Team name="Anastasia Wendy" photo={wendy} title="Vice President" linkedIn="https://www.linkedin.com/in/anastasia-wendy-surya/"/>
+                <Team name="Jamie Chan" photo={jamie} title="Director of Communications" linkedIn="https://www.linkedin.com/in/jamiechan20020421/"/>
+                <Team name="Olivia Chen" photo={olivia} title="HR Director" linkedIn="https://www.linkedin.com/in/olivia-chen1/"/>
+            </div>
+        
+        
         </div>
-      
-    
-    </div>
+    </section>
   )
 }
 
