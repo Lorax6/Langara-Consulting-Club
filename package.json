@@ -2,7 +2,6 @@
   "name": "langara-consulting-club",
   "version": "0.1.0",
   "private": true,
-   "homepage": "https://Lorax6.github.io/Langara-Consulting-Club",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
     "@fortawesome/free-brands-svg-icons": "^7.0.0",
