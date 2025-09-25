@@ -1,11 +1,14 @@
 import React from 'react';
 import './assets/styles/style.css';
-import Header from './components/Header';
-import Home from './components/Home';
-import Newsletter from './components/Newsletter';
-import About from './components/About';
-import Events from './components/Events';
-import WhatWeOffer from './components/WhatWeOffer';
+import Header from './pages/Header';
+import Home from './pages/Home';
+import Newsletter from './pages/Newsletter';
+import About from './pages/About';
+import Events from './pages/Events';
+import WhatWeOffer from './pages/WhatWeOffer';
+import MeetTheTeam from './pages/MeetTheTeam';
+import Contact from './pages/Contact';
+
 
 function App() {
   return (
@@ -15,9 +18,10 @@ function App() {
         <Home />
         <Newsletter />
         <About />
-        <Events />
         <WhatWeOffer/>
-        
+        <Events />
+        <MeetTheTeam/>  
+        <Contact/>
       </main>
     </div>
   );
