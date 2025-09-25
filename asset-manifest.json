@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Langara-Consulting-Club/static/css/main.e2ac4ba6.css",
+    "main.js": "/Langara-Consulting-Club/static/js/main.bf841a33.js",
+    "static/js/900.ae70d9be.chunk.js": "/Langara-Consulting-Club/static/js/900.ae70d9be.chunk.js",
+    "static/media/Discussion.png": "/Langara-Consulting-Club/static/media/Discussion.cc87f4798797f0666645.png",
+    "static/media/Workshop1.png": "/Langara-Consulting-Club/static/media/Workshop1.d73274bb62034dd0f9e8.png",
+    "static/media/GroupPhoto2.JPG": "/Langara-Consulting-Club/static/media/GroupPhoto2.4d4f1706a58833fa8bca.JPG",
+    "static/media/Judges.JPG": "/Langara-Consulting-Club/static/media/Judges.d64759b250bb597bb148.JPG",
+    "static/media/quant-analysis.png": "/Langara-Consulting-Club/static/media/quant-analysis.b21f8ee0bbb4e8285f9a.png",
+    "static/media/caseComp.png": "/Langara-Consulting-Club/static/media/caseComp.938005cc678a69afc5ee.png",
+    "static/media/groupPhoto.jpg": "/Langara-Consulting-Club/static/media/groupPhoto.724f09f3252f77ced786.jpg",
+    "static/media/consumer-behaviour.jpg": "/Langara-Consulting-Club/static/media/consumer-behaviour.e20fe64e5b141d1715a7.jpg",
+    "static/media/logo.png": "/Langara-Consulting-Club/static/media/logo.cc5820257847a31eb4fd.png",
+    "static/media/wendy.jpg": "/Langara-Consulting-Club/static/media/wendy.96bcdc13181f8a037635.jpg",
+    "static/media/mateus.jpg": "/Langara-Consulting-Club/static/media/mateus.9a8495e6b4dffa36376d.jpg",
+    "static/media/olivia.jpg": "/Langara-Consulting-Club/static/media/olivia.642c697e883f4b7bfe24.jpg",
+    "static/media/peter.jpg": "/Langara-Consulting-Club/static/media/peter.e1abb64deecf2cb49bd0.jpg",
+    "static/media/jamie.jpg": "/Langara-Consulting-Club/static/media/jamie.52ee60a1d0890e24382c.jpg",
+    "index.html": "/Langara-Consulting-Club/index.html",
+    "main.e2ac4ba6.css.map": "/Langara-Consulting-Club/static/css/main.e2ac4ba6.css.map",
+    "main.bf841a33.js.map": "/Langara-Consulting-Club/static/js/main.bf841a33.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2ac4ba6.css",
+    "static/js/main.bf841a33.js"
+  ]
+}
